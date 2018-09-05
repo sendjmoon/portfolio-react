@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import Landing from './landing/index';
+import Home from './home/index';
+import About from './about/index';
+import Portfolio from './portfolio/index';
+import Contact from './contact/index';
 
 import './App.css';
 
@@ -10,7 +14,13 @@ class App extends Component {
     return (
       <div className="App">
         <Router>
-          <Route exact path="/" component={Landing} />
+          <div>
+            <Route exact path="/" component={Landing} />
+            <Route exact path="/home" component={Home} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/portfolio" component={Portfolio} />
+            <Route exact path="/contact" component={Contact} />
+          </div>
         </Router>
       </div>
     );
