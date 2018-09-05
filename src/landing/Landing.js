@@ -4,9 +4,13 @@ class Landing extends Component {
   render() {
     return (
       <div className="landing-container">
-        <h1>Landing Component</h1>
+        <div className="landing-content">
+          <h1>A PORTFOLIO</h1>
+          <h3>By James Moon</h3>
+          <button className="ptf-btn"><a href="/home">Check It Out</a></button>
+        </div>
       </div>
-    )
+    );
   }
 }
 
